@@ -99,7 +99,7 @@ async function predict() {
 		//     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
 		// 	labelContainer.childNodes[i].innerHTML = classPrediction;
 
-		if (whichPose == prediction[i].className && prediction[i].probability.toFixed(2) >= 0.75) {
+		if (whichPose == prediction[i].className && prediction[i].probability.toFixed(2) >= 0.85) {
 			whichPose = yogaPoses.randomPose();
 			score += 5;
 
